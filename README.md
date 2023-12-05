@@ -1,25 +1,30 @@
 # Final Project Report
 
-* Student Name:
-* Github Username:
-* Semester:
-* Course:
+* Student Name: Jaime Espinola
+* Github Username: jaimeeespinola
+* Semester: Fall 2023
+* Course: CS 5001
 
 
 
 ## Description 
-General overview of the project, what you did, why you did it, etc. 
-
+This project is a simple version of a drug library used in infusion pumps. I selected this project because I work on infusion pumps (the mechanical side) and the software component of it inspired me to begin studying computer science. Infusion pumps are used to give patients fluids and medications. In one method of pumping, the clinician provides information to the pump (medication name and patient weight) and the pump looks up the drug in the library and calculates the amount of medication that the clinician needs to give. The clinician then puts this amount of medication in an IV bag, and the pump infuses the medication.
 
 ## Key Features
-Highlight some key features of this project that you want to show off/talk about/focus on. 
+The project allows for an automized infusion or a manually added infusion. It also allows the user to add drugs to the existing drub library file. In an automized infusion, the drug is already in the drug library - the user only needs to enter the patient weight and the program will calculate the dose. In a manually added infusion, the user directly enters the dose rate and patient weight, and the program calculates the dose. The project also includes appropriate warnings and confirmations to ensure that the user is ready to start infusion. The drug library includes warnings for each drug - the warnings can be displayed prior to starting infusion.
 
 ## Guide
-How do we run your project? What should we do to see it in action? - Note this isn't installing, this is actual use of the project.. If it is a website, you can point towards the gui, use screenshots, etc talking about features. 
+To run the project, simply run the **drug_library.py** file and follow the in-file instructions. The program provides warnings and input specifications where possible, but general guidelines for formatting for inputs include:
+
+drug name - the name of the drug (not case sensitive)
+warnings to be added - can include spaces and punctuation, and is not case sensitive
+dose rate - must be a rate between 0.1 and 9.9 ml/lb
+patient weight - patient's weight in lbs
+filename - the name of the drug library - must be a txt file
 
 
 ## Installation Instructions
-If we wanted to run this project locally, what would we need to do?  If we need to get API key's include that information, and also command line startup commands to execute the project. If you have a lot of dependencies, you can also include a requirements.txt file, but make sure to include that we need to run `pip install -r requirements.txt` or something similar.
+To run this project locally, download all files, **drug_library.py**, **app_user_inferface.py**, and **drug_library.txt**. Ensure that all files are saved in the directory in which you are working. The program will encounter an error if the drug_library file is not saved to the working directory. 
 
 ## Code Review
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did. 
