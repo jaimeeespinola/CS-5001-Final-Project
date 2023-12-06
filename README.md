@@ -151,16 +151,26 @@ The drug_library.txt file contains a list of drugs, their dose rate, and their w
 * cisatricurium 0.2 Non-depolarizing neuromuscular blocking agent
 
 ### Major Challenges
-Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
+Some aspects that I struggled on were organizing all of my functions and figuring out how to test everything. The organization was difficult because there was a lot of information to get from the user, and I had to determine how to do it in an organized way. Testing was difficult for this project because it is all based on user input, so you cannot easily use doctest or build a test program. Instead, I needed to think of all the possible paths the program can go in based on different inputs, and also think of all the things the user could enter that they are not supposed to enter.
 
 
 ## Example Runs
-Explain how you documented running the project, and what we need to look for in your repository (text output from the project, small videos, links to videos on youtube of you running it, etc)
+There are three example videos that show execution of the 3 major functions of the project:
+
+* Add a drug - 
+* Start a drug that is in the drug library - 
+* Start a drug that is not in the drug library - 
+
+The example videos show the correct function of the program.
 
 ## Testing
-How did you test your code? What did you do to make sure your code was correct? If you wrote unit tests, you can link to them here. If you did run tests, make sure you document them as text files, and include them in your submission. 
+Since the project was based entirely on user input, the way to test it was to practice all the possible inputs and see if it was possible to break the programs. I also tested each function individually before implementing the main(). In the repository there are the text outputs for testing completed:
 
-> _Make it easy for us to know you *ran the project* and *tested the project* before you submitted this report!_
+
+* Add a drug - 
+* Start a drug that is in the drug library - 
+* Start a drug that is not in the drug library - 
+
 
 
 ## Missing Features / What's Next
