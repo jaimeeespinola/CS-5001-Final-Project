@@ -155,11 +155,12 @@ Some aspects that I struggled on were organizing all of my functions and figurin
 
 
 ## Example Runs
-There are three example videos that show execution of the 3 major functions of the project:
+There are three example videos that show execution of the 3 major functions of the project. They are zipped into a file here:
+* https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/Example%20Runs.zip
 
-* Add a drug - 
-* Start a drug that is in the drug library - 
-* Start a drug that is not in the drug library - 
+* Add a drug - Shows adding a drug to the drug library.
+* Start a drug that is in the drug library - shows running a drug that is in the drug library. This video also shows what happens if the user does not enter a txt filename and shows the warnings when the user indicates they would like to read them before infusing.
+* Start a drug that is not in the drug library - shows running a drug that is not in the library and how the user can manually enter the dose rate.
 
 The example videos show the correct function of the program.
 
