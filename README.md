@@ -31,13 +31,31 @@ Go over key aspects of code in this section. Both link to the file, include snip
 
 The two files with code in this project are:
 * **app_user_input.py** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/app_user_interaction.py
-* **drug_library** - 
+* **drug_library** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drug_library.py
+
+Txt files that are required for this project are:
+**drug_library_txt**
+
+**app_user_input** contains the functions that interact with the user. Print statements that display information such as:
+
 
 ```python
-s = "Python syntax highlighting"
-print s
+def print_welcome() -> str:
+    """ Prints a welcome message and returns what the user wishes to do. If it is start infusion, it returns start.
+     If it is add a drug, it returns add
+     Inputs - None
+     Returns - User selection for how to proceed
+    """
+    print('Welcome to the SMART IV PUMP')
+    selection = input('To start an infusion, type "start" \n To add a drug to the library, type "add"\n')
+    if selection == "start":
+        return "start"
+    if selection == "add":
+        return "add"
+    else:
+        print_welcome()
 ```
- 
+This code snippet provides an example of one of the many print statements that is included in the file. It is written recurselively so that if the user does not enter one of the two program options (add drug or start infusion), it continues to prompt the user until they select one of these options.
 
 ### Major Challenges
 Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
