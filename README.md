@@ -16,11 +16,11 @@ The project allows for an automized infusion or a manually added infusion. It al
 ## Guide
 To run the project, simply run the **drug_library.py** file and follow the in-file instructions. The program provides warnings and input specifications where possible, but general guidelines for formatting for inputs include:
 
-drug name - the name of the drug (not case sensitive)
-warnings to be added - can include spaces and punctuation, and is not case sensitive
-dose rate - must be a rate between 0.1 and 9.9 ml/lb
-patient weight - patient's weight in lbs
-filename - the name of the drug library - must be a txt file
+* drug name - the name of the drug (not case sensitive)
+* warnings to be added - can include spaces and punctuation, and is not case sensitive
+* dose rate - must be a rate between 0.1 and 9.9 ml/lb
+* patient weight - patient's weight in lbs
+* filename - the name of the drug library - must be a txt file
 
 
 ## Installation Instructions
