@@ -126,7 +126,7 @@ This function calls the functions needed to add a drug to the drug library. It f
 
 The third and final function is calculate_dose():
 ```python
-def calculate_dose_rate() -> tuple:
+def calculate_dose() -> tuple:
     '''Calcuates the dose in mL of the drug to be infused. The dose is calculated
     based on the dose rate (is either pulled from the library or entered manually if
     the drug is not found in the library) and the patient weight in lbs
@@ -141,7 +141,9 @@ def calculate_dose_rate() -> tuple:
     dose = round(float(dose_rate) * float(patient_weight), 2)
     return dose, warnings
 ```
-This function calculates the dose 
+This function calculates the dose of the drug to be infused. It first calls the function to access the drug library to get the warnings and the rates for the drug, and it calls the function to get patient weight. It then calculates the dose my multiplying the dose rate by the patient wait.
+
+
 ### Major Challenges
 Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
 
