@@ -33,7 +33,7 @@ The two files with code in this project are:
 * **drug_library** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drug_library.py
 
 Txt files that are required for this project are:
-**drug_library_txt** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drug_library.txt
+* **drug_library_txt** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drug_library.txt
 
 **app_user_interaction** contains the functions that interact with the user. Print statements that display information such as:
 ```python
