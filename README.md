@@ -22,6 +22,7 @@ To run the project, simply run the **drug_library.py** file and follow the in-fi
 * patient weight - patient's weight in lbs
 * filename - the name of the drug library - must be a txt file
 
+To access a drug that is already in the library, try dopamine or moprphine (the more well known).
 
 ## Installation Instructions
 To run this project locally, download all files, **drug_library.py**, **app_user_inferface.py**, and **drug_library.txt**. Ensure that all files are saved in the directory in which you are working. The program will encounter an error if the drug_library file is not saved to the working directory. 
@@ -32,7 +33,7 @@ The two files with code in this project are:
 * **drug_library** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drug_library.py
 
 Txt files that are required for this project are:
-**drug_library_txt**
+**drug_library_txt** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drug_library.txt
 
 **app_user_interaction** contains the functions that interact with the user. Print statements that display information such as:
 ```python
@@ -143,6 +144,11 @@ def calculate_dose() -> tuple:
 ```
 This function calculates the dose of the drug to be infused. It first calls the function to access the drug library to get the warnings and the rates for the drug, and it calls the function to get patient weight. It then calculates the dose my multiplying the dose rate by the patient wait.
 
+
+The drug_library.txt file contains a list of drugs, their dose rate, and their warnings. For example:
+* amiodarone 5.0 Class III antiarrthythmic
+* bretylium 5.0 Should not be used in place of more rapidly acting agents.
+* cisatricurium 0.2 Non-depolarizing neuromuscular blocking agent
 
 ### Major Challenges
 Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
