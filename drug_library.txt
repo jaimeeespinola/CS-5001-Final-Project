@@ -1,0 +1,18 @@
+amiodarone 5.0 Class III antiarrthythmic
+bretylium 5.0 Should not be used in place of more rapidly acting agents since there is a delay in antiarrhythmic effect
+cisatricurium 0.2 Non-depolarizing neuromuscular blocking agent
+diltiazem 0.2 Antianginal agent. Antihypertensive. Calcium channel blocker.
+dobutamine 0.4 Inotropic agent and synthetic cathecholamine.
+enalaprilat 1.3 None
+dopamine 1.0 None
+ephedrine 5.0 None
+epinephrine 4.0 Inotropic agent and endogenous cathecholamine.
+hydralazine 9.9 Direct vasodilation of arterioles producing decreased SVR
+isoporterenol 1.0 None
+lebetalol 5.0 None
+lidocaine 1.5 Toxicity: drowsiness; disorientation; paresthesia; twitching; seizures;
+morphine 0.1 Analgesic; narcotic
+nitroglycerin 0.4 None
+phentolamine 5.0 None
+propofol 2.5 None
+vecuronium 0.1 Non-depolarizing neuromuscular blocking agent.
