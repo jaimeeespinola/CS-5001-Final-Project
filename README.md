@@ -30,8 +30,8 @@ To run this project locally, download all files, **drug_library.py**, **app_user
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did. 
 
 The two files with code in this project are:
-* **app_user_input.py** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/app_user_input.py)
-* https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drugs_library.py
+* **app_user_input.py** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/app_user_interaction.py
+* **drug_library** - 
 
 ```python
 s = "Python syntax highlighting"
