@@ -21,14 +21,23 @@ To run the project, simply run the **drug_library.py** file and follow the in-fi
 * dose rate - must be a rate between 0.1 and 9.9 ml/lb
 * patient weight - patient's weight in lbs
 * filename - the name of the drug library - must be a txt file
-* https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/app_user_input.py)
-* https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drugs_library.py
+
 
 ## Installation Instructions
 To run this project locally, download all files, **drug_library.py**, **app_user_inferface.py**, and **drug_library.txt**. Ensure that all files are saved in the directory in which you are working. The program will encounter an error if the drug_library file is not saved to the working directory. 
 
 ## Code Review
 Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did. 
+
+The two files with code in this project are:
+* **app_user_input.py** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/app_user_input.py)
+* https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drugs_library.py
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
 
 ### Major Challenges
 Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
