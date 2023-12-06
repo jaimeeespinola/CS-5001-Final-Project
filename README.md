@@ -22,6 +22,7 @@ To run the project, simply run the **drug_library.py** file and follow the in-fi
 * patient weight - patient's weight in lbs
 * filename - the name of the drug library - must be a txt file
 * https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/app_user_input.py)
+* https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drugs_library.py
 
 ## Installation Instructions
 To run this project locally, download all files, **drug_library.py**, **app_user_inferface.py**, and **drug_library.txt**. Ensure that all files are saved in the directory in which you are working. The program will encounter an error if the drug_library file is not saved to the working directory. 
