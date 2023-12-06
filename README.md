@@ -167,11 +167,9 @@ The example videos show the correct function of the program.
 ## Testing
 Since the project was based entirely on user input, the way to test it was to practice all the possible inputs and see if it was possible to break the programs. I also tested each function individually before implementing the main(). In the repository there are the text outputs for testing completed:
 
-
-* Add a drug - 
-* Start a drug that is in the drug library - 
-* Start a drug that is not in the drug library - 
-
+* Add a drug - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/add%20drug.rtf 
+* Start a drug that is in the drug library - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/start%20drug%20in%20library.rtf
+* Start a drug that is not in the drug library - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/Start%20drug%20not%20in%20library.rtf
 
 
 ## Missing Features / What's Next
