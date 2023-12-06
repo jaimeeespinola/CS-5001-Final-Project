@@ -27,8 +27,6 @@ To run the project, simply run the **drug_library.py** file and follow the in-fi
 To run this project locally, download all files, **drug_library.py**, **app_user_inferface.py**, and **drug_library.txt**. Ensure that all files are saved in the directory in which you are working. The program will encounter an error if the drug_library file is not saved to the working directory. 
 
 ## Code Review
-Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did. 
-
 The two files with code in this project are:
 * **app_user_input.py** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/app_user_interaction.py
 * **drug_library** - https://github.com/jaimeeespinola/CS-5001-Final-Project/blob/main/drug_library.py
@@ -36,9 +34,7 @@ The two files with code in this project are:
 Txt files that are required for this project are:
 **drug_library_txt**
 
-**app_user_input** contains the functions that interact with the user. Print statements that display information such as:
-
-
+**app_user_interaction** contains the functions that interact with the user. Print statements that display information such as:
 ```python
 def print_welcome() -> str:
     """ Prints a welcome message and returns what the user wishes to do. If it is start infusion, it returns start.
@@ -57,6 +53,7 @@ def print_welcome() -> str:
 ```
 This code snippet provides an example of one of the many print statements that is included in the file. It is written recurselively so that if the user does not enter one of the two program options (add drug or start infusion), it continues to prompt the user until they select one of these options.
 
+
 There are also several print statements that do not require any user input. For example:
 ```python
 def print_shut_down_message() -> None:
@@ -65,7 +62,8 @@ def print_shut_down_message() -> None:
 ```
 This code snippet simply prints the shut down message.
 
-There are also numerous functions that ask for user input but do not print anything to the user, instead returns a value for the drug_library functions to use.
+
+There are also numerous functions that ask for user input but do not print anything to the user, instead returns a value for the drug_library functions to use. For example:
 ```python
 def get_filename() -> str:
     """ Get the filename of the drug library
@@ -82,7 +80,68 @@ def get_filename() -> str:
 This code snippet asks the user to input the name of the file for the drug library. It is also written recursively so that is the user inputs a file that is not a txt file, it will continue to prompt the user until they do so.
 
 
+**drug_library.py** contains the main driver for the application. There are three functions and the main() which drive the program.
 
+The first is access_drug_library:
+```python
+def access_drug_library() -> int:
+    '''Opens the file where the drug library is located
+    Searches the drug library for the drug that the user entered
+    If the drug is found in the library, it returns the dose rate associated with drug
+    If it is not found, it runs the function to add the dose rate manually
+    
+    Inputs - none
+    Returns - dose rate
+    '''
+    drug_name = get_drug_name()
+    filename = get_filename()
+    with open(filename, "r") as file:
+        for line in file:
+            if drug_name in line:
+                rate_warnings = line[(len(drug_name) + 1):]
+                rate = rate_warnings[0:4]
+                warnings = rate_warnings[4:]
+                return (rate, warnings)    
+        get_dose_rate()
+```
+The function prompts the user to enter the drug name by calling the get_drug_name() function. It then prompts the user and calls a function to get the filename. It then seaches the filename to see if the drug name is in the file. If it is, it stores both the rate and the warnings for that drug. If it is not found in the file, it calls the get_dose_rate() function (another function within app_user_interaction) , which prompts the user to manually enter the dose rate.
+
+
+The second function is add_drug():
+```python
+def add_drug() -> None:
+    '''Takes the filename that the user enters, and adds a new drug to that file
+    
+    Inputs - None 
+    Returns - None
+    '''
+    to_add = get_drug_info()
+    filename = get_filename()
+    file_to_write = open(filename, "a")
+    file_to_write.write(to_add)
+    file_to_write.close()
+```
+This function calls the functions needed to add a drug to the drug library. It first gets the information to be added by called get_drug_info() - this function prompts the user for the drug name, dose rate, and warnings associated with the drug. Then the function prompts the user for the the filename, appends the new drug information to this file, and closes the file.
+
+
+The third and final function is calculate_dose():
+```python
+def calculate_dose_rate() -> tuple:
+    '''Calcuates the dose in mL of the drug to be infused. The dose is calculated
+    based on the dose rate (is either pulled from the library or entered manually if
+    the drug is not found in the library) and the patient weight in lbs
+
+    Inputs - None
+    Returns = Tuple of dose, warnings
+    '''
+    drug_warnings = access_drug_library()
+    dose_rate = drug_warnings[0]
+    warnings = drug_warnings[1]
+    patient_weight = get_patient_weight()
+    dose = round(float(dose_rate) * float(patient_weight), 2)
+    return dose, warnings
+```
+This function calculates the dose 
 ### Major Challenges
 Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
 
