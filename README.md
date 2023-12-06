@@ -57,6 +57,32 @@ def print_welcome() -> str:
 ```
 This code snippet provides an example of one of the many print statements that is included in the file. It is written recurselively so that if the user does not enter one of the two program options (add drug or start infusion), it continues to prompt the user until they select one of these options.
 
+There are also several print statements that do not require any user input. For example:
+```python
+def print_shut_down_message() -> None:
+    """ Prints the shut down message"""
+    print('Infusion Complete. \n Shutting down')
+```
+This code snippet simply prints the shut down message.
+
+There are also numerous functions that ask for user input but do not print anything to the user, instead returns a value for the drug_library functions to use.
+```python
+def get_filename() -> str:
+    """ Get the filename of the drug library
+    Returns:
+        str: filename
+    """
+    filename = input('Enter the filename for the drug library: ').strip()
+    if filename.endswith('.txt'):
+        return filename
+    else:
+        print('Filename must end with .txt')
+        return get_filename()
+```
+This code snippet asks the user to input the name of the file for the drug library. It is also written recursively so that is the user inputs a file that is not a txt file, it will continue to prompt the user until they do so.
+
+
+
 ### Major Challenges
 Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
 
