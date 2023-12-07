@@ -1,5 +1,5 @@
 amiodarone 5.0 Class III antiarrthythmic
-bretylium 5.0 Should not be used in place of more rapidly acting agents since there is a delay in antiarrhythmic effect
+bretylium 5.0 Should not be used in place of more rapidly acting agents.
 cisatricurium 0.2 Non-depolarizing neuromuscular blocking agent
 diltiazem 0.2 Antianginal agent. Antihypertensive. Calcium channel blocker.
 dobutamine 0.4 Inotropic agent and synthetic cathecholamine.
