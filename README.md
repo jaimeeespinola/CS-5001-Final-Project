@@ -173,11 +173,8 @@ Since the project was based entirely on user input, the way to test it was to pr
 
 
 ## Missing Features / What's Next
-Focus on what you didn't get to do, and what you would do if you had more time, or things you would implement in the future. 
+A few features that I would have liked to include are creating the drug as a class and using some of the fucntionality of classes. I also would have liked to add an error loop for when the file does not exist in the directory. I cused this error quite a few times when testing my program and would have to start over each time. I tried for some time to implement the error loop but was not able to do so in the time that I had. Finally, I would like to include more types of infusions. I simplified the infusion options by only including infusion by volume. In reality, there are much more complicated infusions. For example infusions that infuse at one rate for a period of time to start, and after a certime time (or volume), change to a slower rate of infusion. In the future, that functionality could be added to this project.
 
 ## Final Reflection
-Write at least a paragraph about your experience in this course. What did you learn? What do you need to do to learn more? Key takeaways? etc.
+Overall I had a good experience in this course - I found it to be a good mix of frustrating and rewarding. I find that personally, if I am not getting frustrated, I am not learning. This couse was able to get me to that frustrated point, but also had enough time/support so that being able to successfully complete the assignments. By completing the assignments correctly, I was able to prove to myself that I was capable of understanding the content. I did learn a lot of programming concepts such as functions, classes, lists, and recursiveness. However, I also learned how to work for shorter periods of time and take breaks. I know we were told at the beginning, but it did take me a bit to learn that often the best way to solve something is to actually stop trying for a bit (and then return later). I feel that from a programming perspective, I need a bit more practice in classes and opening/writing files. I chose to include writing and reading files in my final project to get a little more practice, but I struggled with the concept and still feel a bit more uncomfortable in this area than in others. Finally, I need to continue working on taking breaks and not getting frustrated and wanting to solve everything immedietly. I enjoyed this course and and looking foward to what is to come in the next courses.
 
-Check code for style and upload,
-
-Then download everything to make sure it works properly.
